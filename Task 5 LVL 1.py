@@ -1,3 +1,7 @@
+'''
+Уровень 1 Задание 5
+'''
+
 import math
 p = int(input())
 h = int(input())
