@@ -12,7 +12,7 @@ n = (b - a) // h
 
 while x <= b:
     i += 1
-    si = pow((2 * x), i) / math.factorial(i)
+    si = pow((2 * x), i) / math.factorial(i) # S i-ое для вычисления суммы s
     if si < 0.0001:
         break
     print('y =', round(math.exp(2 * x), 2))
