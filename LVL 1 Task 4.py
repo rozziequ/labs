@@ -1,7 +1,5 @@
 import random
 
-random.seed(8)
-
 len = 5
 a = []
 
@@ -22,6 +20,6 @@ for i in range(len):  # Преобразование массива
         a[i] -= avg
         a[i] = int(a[i])
     else: 
-        a[i] -= avg
+        a[i] = round(a[i] - avg, 1)
 
 print('Элементы конечного массива:', a)
