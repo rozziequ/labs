@@ -1,7 +1,6 @@
 import random
 
 a = []
-random.seed(9)
 len = random.randint(5, 8)
 for i in range(len):
     a.append(random.randint(1, 15))
