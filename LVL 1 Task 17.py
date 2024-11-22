@@ -22,10 +22,12 @@ for i in range(height):
     for j in range(width):
         if a[i][j] < mini:
             mini = (a[i][j])
-    a[i].remove(mini)
-    a[i].insert(0, mini)
-            
+    for j in range(width):
+        if mini == a[i][j]:
+            a[i].pop(j)
+            a[i].insert(0, mini)
+
+          
 print('Конечная матрица:')
 for i in range(height):
     print(a[i])
-    
