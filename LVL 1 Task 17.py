@@ -1,7 +1,6 @@
 # В каждой строке матрицы B размером n x m минимальный элемент поместить в начало строки, сохранив порядок остальных элементов.
 
 import random
-random.seed(1016)
 mini = 0
 a = []
 
@@ -14,7 +13,9 @@ for i in range(height):   # Заполнение массива
         b.append(random.randint(1, 20))
     a.append(b)
 
-print('Начальная матрица:', a)
+print('Начальная матрица:')
+for i in range(height):
+    print(a[i])
 
 for i in range(height):
     mini = a[i][0]
@@ -24,5 +25,7 @@ for i in range(height):
     a[i].remove(mini)
     a[i].insert(0, mini)
             
-print('Конечная матрица:', a)
+print('Конечная матрица:')
+for i in range(height):
+    print(a[i])
     
