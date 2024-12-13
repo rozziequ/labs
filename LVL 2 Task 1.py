@@ -18,15 +18,6 @@ for i in range(1, len):
 print('Минимальный элемент равен', min)
 print()
 
-print('Тестирование:')
-exp_min = 1
-exp_min_numb = 7
-if exp_min == min and exp_min_numb == min_numb:
-    print('Верно!')
-else:
-    print('Программа работает некорректно!')
-print()
-
 for i in range(len):  # На случай, если будет несколько одинаковых минимальных элементов
     if min == a[i]:
         a[i] = a[i] * 2        
